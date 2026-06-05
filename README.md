@@ -28,6 +28,18 @@ cp .env.example .env
 
 Update `.env` with strong random secrets before running in production.
 
+## Render Deployment
+
+Create a Render Web Service from this repository.
+
+- Build Command: `npm install`
+- Start Command: `npm start`
+- Health Check Path: `/api/health`
+
+If the repository contains this project inside another folder, set Root Directory to `ai-genius-auth`.
+
+In Render, open Environment and use Add from .env with the local `.env.render` file. Do not upload `.env` or `.env.render` to GitHub.
+
 ## Test Users
 
 | Role | Email | Password |
